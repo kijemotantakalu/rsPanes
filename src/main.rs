@@ -17,7 +17,6 @@ fn main() {
   let height_str = matches.value_of("height");
   match height_str {
     None => {
-      println!("no height provided, using default");
     }
     Some(s) => {
       match s.parse::<i32>() {
